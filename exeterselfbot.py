@@ -807,28 +807,28 @@ async def bots(ctx):
 async def help(ctx, category=None):
     await ctx.message.delete()
     if category is None:
-        embed = discord.Embed(color=0xFF633B, timestamp=ctx.message.created_at)
-        embed.set_author(name="𝙀𝙓𝙀𝙏𝙀𝙍 𝙎𝙀𝙇𝙁𝘽𝙊𝙏 | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
+        embed = discord.Embed(color=0x000000, timestamp=ctx.message.created_at)
+        embed.set_author(name="LORDS OF CHAOS SB | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
                          icon_url=Exeter.user.avatar_url)
         embed.set_thumbnail(url=Exeter.user.avatar_url)
         embed.set_image(url="https://cdn.discordapp.com/attachments/723250694118965300/723253781873164298/image1.gif")
-        embed.add_field(name="\uD83E\uDDCA `GENERAL`", value="Shows all general commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `ACCOUNT`", value="Shows all account commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `TEXT`", value="Shows all text commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `MUSIC`", value="Shows all music commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `IMAGE`", value="Shows all image manipulation commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `NSFW`", value="Shows all nsfw commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `MISC`", value="Shows all miscellaneous commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `ANTI-NUKE`", value="Shows all anti-nuke commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `NUKE`", value="Shows all nuke commands", inline=False)
+        embed.add_field(name="`GENERAL`", value="Shows all general commands", inline=False)
+        embed.add_field(name="`ACCOUNT`", value="Shows all account commands", inline=False)
+        embed.add_field(name="`TEXT`", value="Shows all text commands", inline=False)
+        embed.add_field(name="`MUSIC`", value="Shows all music commands", inline=False)
+        embed.add_field(name="`IMAGE`", value="Shows all image manipulation commands", inline=False)
+        embed.add_field(name="`NSFW`", value="Shows all nsfw commands", inline=False)
+        embed.add_field(name="`MISC`", value="Shows all miscellaneous commands", inline=False)
+        embed.add_field(name="`ANTI-NUKE`", value="Shows all anti-nuke commands", inline=False)
+        embed.add_field(name="`NUKE`", value="Shows all nuke commands", inline=False)
         await ctx.send(embed=embed)
     elif str(category).lower() == "general":
-        embed = discord.Embed(color=random.randrange(0x1000000), timestamp=ctx.message.created_at)
-        embed.set_image(url="https://cdn.discordapp.com/attachments/723250694118965300/723272273888280576/image0.gif")
-        embed.description = f"\uD83D\uDCB0 `GENERAL COMMANDS`\n`> help <category>` - returns all commands of that category\n`> uptime` - return how long the selfbot has been running\n`> prefix <prefix>` - changes the bot's prefix\n`> ping` - returns the bot's latency\n`> av <user>` - returns the user's pfp\n`> whois <user>` - returns user's account info\n`> tokeninfo <token>` - returns information about the token\n`> copyserver` - makes a copy of the server\n`> rainbowrole <role>` - makes the role a rainbow role (ratelimits)\n`> serverinfo` - gets information about the server\n`> serverpfp` - returns the server's icon\n`> banner` - returns the server's banner\n`> shutdown` - shutsdown the selfbot\n"
+        embed = discord.Embed(color=random.randrange(0x000000), timestamp=ctx.message.created_at)
+        embed.set_image(url="https://media.discordapp.net/attachments/766885584484171786/767892942781546516/image0.jpg")
+        embed.description =`GENERAL COMMANDS`\n`> help <category>` - returns all commands of that category\n`> uptime` - return how long the selfbot has been running\n`> prefix <prefix>` - changes the bot's prefix\n`> ping` - returns the bot's latency\n`> av <user>` - returns the user's pfp\n`> whois <user>` - returns user's account info\n`> tokeninfo <token>` - returns information about the token\n`> copyserver` - makes a copy of the server\n`> rainbowrole <role>` - makes the role a rainbow role (ratelimits)\n`> serverinfo` - gets information about the server\n`> serverpfp` - returns the server's icon\n`> banner` - returns the server's banner\n`> shutdown` - shutsdown the selfbot\n"
         await ctx.send(embed=embed)
     elif str(category).lower() == "account":
-        embed = discord.Embed(color=random.randrange(0x1000000), timestamp=ctx.message.created_at)
+        embed = discord.Embed(color=random.randrange(0x000000), timestamp=ctx.message.created_at)
         embed.set_image(url="https://cdn.discordapp.com/attachments/723250694118965300/723266223554691202/image0.gif")
         embed.description = f"\uD83D\uDCB0 `ACCOUNT COMMANDS`\n`> ghost` - makes your name and pfp invisible\n`> pfpsteal <user>` - steals the users pfp\n`> setpfp <link>` - sets the image-link as your pfp\n`> hypesquad <hypesquad>` - changes your current hypesquad\n`> spoofcon <type> <name>` - spoofs your discord connection\n`> leavegroups` - leaves all groups that you're in\n`> cyclenick <text>` - cycles through your nickname by letter\n`> stopcyclenick` - stops cycling your nickname\n`> stream <status>` - sets your streaming status\n`> playing <status>` - sets your playing status\n`> listening <status>` - sets your listening status\n`> watching <status>` - sets your watching status\n`> stopactivity` - resets your status-activity\n`> acceptfriends` - accepts all friend requests\n`> delfriends` - removes all your friends\n`> ignorefriends` - ignores all friends requests\n`> clearblocked` - clears your block-list\n`> read` - marks all messages as read\n`> leavegc` - leaves the current groupchat\n`> adminservers` - lists all servers you have perms in\n`> slotbot <on/off>` - snipes slotbots ({Exeter.slotbot_sniper})\n`> giveaway <on/off>` - snipes giveaways ({Exeter.giveaway_sniper})\n`> mee6 <on/off>` - auto sends messages in the specified channel ({Exeter.mee6}) <#{Exeter.mee6_channel}>\n`> yuikiss <user>` - auto sends yui kisses every minute <@{Exeter.yui_kiss_user}> <#{Exeter.yui_kiss_channel}>\n`> yuihug <user>` - auto sends yui hugs every minute <@{Exeter.yui_hug_user}> <#{Exeter.yui_hug_channel}>\n`> yuistop` - stops any running yui loops"
         await ctx.send(embed=embed)
